@@ -1,0 +1,114 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #222;
+  background-image: url('https://source.unsplash.com/1600x900/?nature');
+  background-size: cover;
+  font-size: 18px;
+}
+input.search-bar::placeholder {
+  color: #000; /* Set the placeholder text color to black */
+}
+
+h2 {
+  color: #fff;
+  font-size: 2em; /* Increased font size for a bold heading */
+  margin-bottom: 1em; /* Adjusted margin for separation */
+}
+.title {
+  color: #fff;
+   /* Increased font size for a bold heading */
+  margin-bottom: 1em; /* Adjusted margin for separation */
+}
+.card {
+  background: rgba(0, 0, 0, 0.9); /* Increased transparency for a darker overlay */
+  color: #fff;
+  padding: 2em;
+  border-radius: 15px;
+  width: 80%;
+  max-width: 500px; /* Increased max-width for larger cards */
+  margin: 2em auto;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); /* Increased box shadow for more depth */
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 2em; /* Adjusted margin-top for better spacing */
+}
+
+button {
+  margin: 0.5em;
+  border-radius: 50%;
+  border: none;
+  height: 40px;
+  width: 40px;
+  outline: none;
+  background: #555;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.2s ease-in-out;
+}
+
+button:hover {
+  background: #777;
+}
+
+input.search-bar {
+  border: none;
+  outline: none;
+  padding: 0.7em 1em; /* Adjusted padding for better input appearance */
+  border-radius: 25px; /* Increased border-radius for smoother edges */
+  background: #666; /* Adjusted background color */
+  color: #fff;
+  font-family: inherit;
+  font-size: 16px;
+  width: calc(100% - 20px);
+}
+
+h1.temp {
+  margin: 0;
+  margin-bottom: 0.3em; /* Adjusted margin for better separation */
+  color: #fff;
+  font-size: 2.5em; /* Increased font size for temperature */
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.description {
+  text-transform: capitalize;
+  margin-left: 12px; /* Increased margin for better alignment */
+  font-size: 1.5em; /* Adjusted font size */
+}
+
+.weather.loading {
+  position: relative;
+}
+
+.weather.loading:after {
+  content: "Please Wait...";
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centered loading text */
+}
+
+.time {
+  font-size: small;
+  margin-bottom: 1em;
+}
+
+.footnote {
+  font-size: small;
+  margin-top: 0.5em; /* Adjusted margin-top */
+  color: bisque;
+}
